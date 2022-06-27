@@ -20,24 +20,24 @@
     </div>
     <div class="col">
       <button type="submit" class="btn btn-primary w-100 mb-4">Daftar Antrian Selanjutnya</button>
-        <table class="table table-hover border border-3">
-          <thead class="table-dark">
-            <tr>
-              <td>No antrian</td>
-              <td>Panggil</td>
-              <td>Keterangan</td>
-            </tr>
-          </thead>
-          <?php foreach($loket as $row=> $values) : ?>
-          <tbody>
-            <tr>
-              <th><?= $values->kode ?></th>
-              <th><a href="" class="btn btn-warning">Panggil</a></th>
-              <th><?= $values->keterangan ?></th>
-            </tr>
-          </tbody>
-          <?php endforeach; ?>
-        </table>
+      <table class="table table-hover border border-3">
+        <thead class="table-dark">
+          <tr>
+            <td>No antrian</td>
+            <td>Panggil</td>
+            <td>Keterangan</td>
+          </tr>
+        </thead>
+        <?php foreach ($loket as $row => $values) : ?>
+        <tbody>
+          <tr>
+            <th><?= $values->kode ?></th>
+            <th><a href="" class="btn btn-warning">Panggil</a></th>
+            <th><?= $values->keterangan ?></th>
+          </tr>
+        </tbody>
+        <?php endforeach; ?>
+      </table>
     </div>
   </div>
 
